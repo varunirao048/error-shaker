@@ -1,0 +1,71 @@
+.input-error-shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform:translate3d(0,0,0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  color: #EE342F !important;
+
+}
+@keyframes shake {
+  10%,90% {
+    transform: translate3d(-1px,0,0);
+  }
+  20%,80% {
+    transform: translate3d(2px,0,0);
+  }
+  30%,50%,70% {
+    transform: translate3d(-4px,0,0);
+  }
+  40%,60% {
+    transform: translate3d(4px,0,0);
+  }
+
+}
+#input-password {
+  width:121px;
+  height: 30px;
+  background: #881238;
+  border: none;
+  border-bottom: 4px solid #660B28;
+  vertical-align: top;
+  margin-top: 2px;
+  padding-right: 8px;
+  color: white;
+  font-family: serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: left;
+}
+.input-wrapper {
+  width:max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.button-start {
+width:60px;
+height: 30px;
+background: #881238;
+border: none;
+border-bottom: 4px solid #660B28;
+vertical-align: top;
+margin-top: 2px;
+padding-right: 8px;
+color: white;
+font-family: serif;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+padding-left: 6px;
+padding-right: 6px;
+text-align: center;
+}
+input:active {
+  outline: none;
+}
+input:focus{
+  outline: none;
+}
